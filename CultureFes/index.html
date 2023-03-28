@@ -2,171 +2,182 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Kyoto University Culture Festival</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
-        /* GLOBAL STYLE */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Comic Neue', cursive;
-        }
-
-        body {
-            background: #FFF;
-            color: white;
-        }
-
-        /* HEADER */
-        .nav {
-            width: 100%;
-            padding: 10px;
-            background-color: #2f2f2f;
-        }
-
-
-        .nav span a {
-            list-style: none;
-            text-decoration: none;
-            padding: 10px 5px;
-            font-size: 1.5rem;
-            color: cyan;
-        }
-
-        /* MAIN */
-        .main {
-            width: 100%;
-            height: 100%;
-            background-image: url(sakura.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-        }
-
-        .hero {
-            width: 100%;
-        }
-
-        .hero video {
-            width: 100%;
-        }
-
-        .wrapper {
-            width: 1200px;
-            margin-inline: auto;
-        }
-
-        h1 {
-            font-size: 3rem;
-            color: cyan;
-            padding: 2px;
-            background-color: #2f2f2f;
-            border-radius: 5px;
-            box-shadow: 0px 2px 10px gray;
-        }
-
-        p {
-            font-size: 1.5rem;
-        }
-
-        form {
-            border-radius: 4px;
-            border: 2px solid cyan;
-            background-color: #2f2f2f;
-        }
-
-    </style>
 </head>
 <body>
-    <!-- NAVIGATION -->
-    <div>
-        <div class="nav" align="center">
-            <span style="position: absolute; top: 1rem; left: 35rem">&#40Click Home again to play audio&#41</span>
-            <span><a href="index.html">Home</a></span> |
-            <span><a href="info.html">Info</a></span> |
-            <span><a href="events.html">Activities</a></span> 
+    
+    <!-- HEADER -->
+
+    <header>
+        <nav>
+            <a href="#">
+                <img src="kyoto Logo.png">
+            </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#FAQ">FAQ</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <video src="videoplayback.mp4" muted autoplay loop></video>
+    </header>
+    
+    <div class="hero">
+        <div class="wrapper">
+            <p class="title"> 
+            KYOTO UNIVERSITY <br>
+            CULTURE FESTIVAL
+            </p>
         </div>
     </div>
-    <!-- END OF NAVIGATION -->
-    <!-- MAIN SECTION -->
-    <div class="main">
-        <div class="wrapper">
-            <!-- HERO SECTION -->
-            <div class="hero">
-                <video src="bgvideo.mp4" autoplay muted loop></video>
-                <br>
-                <br>
-                <h1 align="center">KYOTO UNIVERSITY CULTURAL FESTIVAL </h1>
-            </div>
-            <!-- END OF HERO SECTION -->
-            <!-- DESCRIPTION -->
-            <div>
-                <br>
-                <p align="center">
-                    Welcome to the annual Kyoto University Culture Festival, a celebration of the rich traditions and customs of Japan! This festival is a wonderful opportunity to immerse yourself in the vibrant and colorful world of Japanese culture. From delicious Japanese cuisine to beautiful arts and crafts, this festival has something for everyone.
-                    <br>
-                    <br>
-                    Throughout the festival, you'll have the chance to experience a variety of traditional Japanese performances, such as taiko drumming, dance performances, and theatrical productions. You'll also have the opportunity to try your hand at traditional Japanese arts and crafts, like origami, calligraphy, and ikebana (flower arranging).
-                    <br>
-                    <br>
-                    In addition to the cultural activities, the festival also features a variety of delicious Japanese food and drinks. You can sample a range of tasty dishes, including sushi, ramen, and tempura, as well as refreshing green tea and sake.
-                    <br>
-                    <br>    
-                    Whether you're a long-time fan of Japanese culture or a newcomer to its many wonders, the Japanese Culture Festival is an event not to be missed. So come and join us as we celebrate the beauty and diversity of Japan!
-                </p>
-            </div>
-            <!-- END OF DESCRIPTION -->
-            <br>
-            <br>
-            <!-- FEEDBACK -->
-            <div>
-                <form style="width: 500px; margin-inline: auto;">
-                    <div>
-                        <h2 align="center" style="font-size: 1.5rem">FEEDBACK</h2>
-                        <div align="center">
+
+    <!-- END OF HEADER -->
+
+    <!-- MAIN -->
+    <main>
+        <section class="Introduction">
+            <div class="wrapper">
+                <div class="intro">
+                    <h2>WELCOME!</h2>
+                    <div class="intro-description">
+                        <p>to the annual Kyoto University Culture Festival, a celebration of the rich traditions and customs of Japan! This festival is a wonderful opportunity to immerse yourself in the vibrant and colorful world of Japanese culture. From delicious Japanese cuisine to beautiful arts and crafts, this festival has something for everyone.
                             <br>
-                            <div>
-                                <label for="email">Your Email</label>
-                            </div>
-                            <input type="email" name="email" id="email">    
+                            <br>
+                            Throughout the festival, you'll have the chance to experience a variety of traditional Japanese performances, such as taiko drumming, dance performances, and theatrical productions. You'll also have the opportunity to try your hand at traditional Japanese arts and crafts, like origami, calligraphy, and ikebana (flower arranging).
+                            <br>
+                            <br>
+                            In addition to the cultural activities, the festival also features a variety of delicious Japanese food and drinks. You can sample a range of tasty dishes, including sushi, ramen, and tempura, as well as refreshing green tea and sake.
+                            <br>
+                            <br>    
+                            Whether you're a long-time fan of Japanese culture or a newcomer to its many wonders, the Japanese Culture Festival is an event not to be missed. So come and join us as we celebrate the beauty and diversity of Japan!
+                        </p>
+                            <img src="undraw_festivities_tvvj.svg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="events" class="events">
+            <div class="wrapper">
+                <h2>EVENTS</h2>
+                <h3>These are the main activities of the festival <br> but there are more to discover when you venture into the whole school grounds</h3>
+                <div class="event-list">
+                    <div class="event-container">
+                        <div> 
+                            <h3>Band Performance</h3>
+                            <p>
+                                One of the highlights of the festival, the band highlights where the students <br> showcase their musical talents by performing in various genres and features a variety of instruments.
+                            </p>
                         </div>
-                        <br>
-                        <div align="center">
-                            <div>
-                                <label for="textarea">Your thoughts!</label>
-                            </div>
-                            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>   
+                        <div class="event-image">
+                            <iframe src="https://www.youtube.com/embed/NYnKWz9dIOc?vq=hd1080&loop=1&rel=0&color=white&playlist=NYnKWz9dIOc" width="100%" height="100%" title="[4K] Never Forget! [Bocchi The Rock] | [CC]" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
-                    <!-- Email submit (mail@exmaple.com?subject = Feedback&body = Message) -->
-                    <a onclick="Submit()" href="#" style="color: white; text-decoration: none; margin-left: 12rem; padding: 1px; border: 2px solid cyan;">Submit Feedback</a>
+                    <div class="event-container">
+                        <div class="event-image">
+                            <iframe src="https://www.youtube.com/embed/Y3U7wQTQaOo?start=26&end=54&vq=hd1080&loop=1&rel=0&cc_load_policy=1&iv_load_policy=3&color=white" width="100%" height="100%" title="Kimi No Na Wa - Mitsuha Dancing Scene" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div> 
+                            <h3>Dance Performance</h3>
+                            <p>
+                                Come see the dance performances of our students! Our students have a lot in store for you all, <br> they have various genres to present such as: Traditional, Pop, and Hip-hop.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="event-container">
+                        <div> 
+                            <h3>Theater Performance</h3>
+                            <p>
+                                A performance that showcases the student's creativity and acting skills. <br>
+                                Come see the various stories that the student have in store for the viewers
+                            </p>
+                        </div>
+                        <div class="event-image">
+                            <iframe src="https://www.youtube.com/embed/PYFgbevSCZo?start=30&end=60&vq=hd1080&color=white&playlist=PYFgbevSCZo" width="100%" height="100%" title="Tomo and Misuzu’s performance in the Cinderella stage play! ~ Tomo-chan Is a Girl! ~ Ecchi Chan" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <h2 style="text-shadow: 0px 2px 7px #fbab9d; color: #2e3644;">DAY OF EVENTS</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Opening</td>
+                            <td>Club Activities</td>
+                        </tr>
+                        <tr>
+                            <td>Dance Performance</td>
+                            <td>Theater Performance</td>
+                        </tr>
+                        <tr>
+                            <td>Club Activities</td>
+                            <td>Band Performance</td>
+                        </tr>
+                        <tr>
+                            <td>Fireworks display</td>
+                            <td>Closing</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section id="FAQ" class="FAQ">
+            <div class="wrapper">
+                <h2 style="text-shadow: 0px 2px 7px #fbab9d; color: #2e3644;">FAQ</h2> 
+                <div>
+                    <ul style="font-size: 1.5rem;">
+                        <li><strong>Who</strong> organizes these events? It's organized by the students, with support from the school staff.</li>
+                        <li><strong>How</strong> many days will the event last? 2 days </li>
+                        <li><strong>What</strong>  activities and performances can I expect? Traditional dance, music, theater performances, science experiments, art exhibits, club demonstrations, and food stands</li>
+                        <li><strong>What</strong>  kind of food can I expect at this event? Traditional japanese food such as yakisoba&#40fried noodles&#41, takoyaki&#40octopus balls&#41, and taiyaki&#40fish-shaped cakes filled with sweet red bean paste&#41.</li>
+                    </ul>
+                </div>
+                <h2 style="text-shadow: 0px 2px 7px #fbab9d; color: #2e3644;">Location</h2>
+                <iframe style="margin-left: 24rem; border-radius: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.219256942119!2d135.77863311524098!3d35.02624438035225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60010857fbd64b75%3A0x11921ef4ea8c2443!2sKyoto%20University!5e0!3m2!1sen!2sph!4v1679652222144!5m2!1sen!2sph" width="600" height="500"></iframe>
+            </div>
+        </section>
+        <section id="Contact" class="Contact">
+            <div class="wrapper">
+                <h2 style="text-shadow: 0px 2px 7px #fbab9d; color: #2e3644;">Contact Us</h2> 
+                <form>
+                    <div class="input-container">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="input-container">
+                        <label for="msg">Message</label>
+                       <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                    </div>
+                    <button onclick="Submit()" type="submit">SUBMIT</button>
                 </form>
             </div>
-            <!-- END OF FEEDBACK -->
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <p>FOOTER</p>
         </div>
-        <br>
-        <br>
-        <br>
+    </footer>
 
-        <audio id="bgmusicc" preload="auto" autoplay loop>
-            <source src="bgmusic.mp4" type="audio/mp3">
-        </audio>
-
-    </div>
-    <!-- END OF MAIN SECTION -->
     <!-- SCRIPT -->
+
     <script>
         function Submit() {
-            alert("Feedback submitted!");
+            alert("Message sent!");
         }
-
-        let vid = document.getElementById("bgmusicc");
-        vid.volume = 0.3;
     </script>
+
+    <!-- END OF SCRIPT -->
 
 </body>
 </html>
-
