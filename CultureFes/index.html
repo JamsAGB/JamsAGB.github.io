@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
     <title>Kyoto University Culture Festival</title>
 </head>
 <body>
-    
+
     <!-- HEADER -->
 
     <header>
@@ -22,21 +23,22 @@
                 <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
-        <video src="videoplayback.mp4" muted autoplay loop></video>
     </header>
-    
-    <div class="hero">
-        <div class="wrapper">
-            <p class="title"> 
-            KYOTO UNIVERSITY <br>
-            CULTURE FESTIVAL
-            </p>
+
+    <section class="hero">
+        <p class="title"> 
+                KYOTO UNIVERSITY <br>
+                CULTURE FESTIVAL
+        </p>
+        <div class="video-container">
+            <video src="videoplayback.mp4" muted autoplay loop></video>
         </div>
-    </div>
+    </section>
 
     <!-- END OF HEADER -->
 
     <!-- MAIN -->
+
     <main>
         <section class="Introduction">
             <div class="wrapper">
@@ -131,7 +133,7 @@
         <section id="FAQ" class="FAQ">
             <div class="wrapper">
                 <h2 style="text-shadow: 0px 2px 7px #fbab9d; color: #2e3644;">FAQ</h2> 
-                <div>
+                <div class="faq-container">
                     <ul style="font-size: 1.5rem;">
                         <li><strong>Who</strong> organizes these events? It's organized by the students, with support from the school staff.</li>
                         <li><strong>How</strong> many days will the event last? 2 days </li>
@@ -140,7 +142,7 @@
                     </ul>
                 </div>
                 <h2 style="text-shadow: 0px 2px 7px #fbab9d; color: #2e3644;">Location</h2>
-                <iframe style="margin-left: 24rem; border-radius: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.219256942119!2d135.77863311524098!3d35.02624438035225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60010857fbd64b75%3A0x11921ef4ea8c2443!2sKyoto%20University!5e0!3m2!1sen!2sph!4v1679652222144!5m2!1sen!2sph" width="600" height="500"></iframe>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.219256942119!2d135.77863311524098!3d35.02624438035225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60010857fbd64b75%3A0x11921ef4ea8c2443!2sKyoto%20University!5e0!3m2!1sen!2sph!4v1679652222144!5m2!1sen!2sph" height="500"></iframe>
             </div>
         </section>
         <section id="Contact" class="Contact">
@@ -164,21 +166,25 @@
             </div>
         </section>
     </main>
+
+    <!-- END OF MAIN -->
+
+    <!-- FOOTER -->
     <footer>
         <div class="wrapper">
-            <p>FOOTER</p>
+            <p>Copyright &#169 2023</p>
         </div>
     </footer>
+    <!-- END OF FOOTER -->
 
-    <!-- SCRIPT -->
+     <!-- SCRIPT -->
 
-    <script>
+     <script>
         function Submit() {
             alert("Message sent!");
         }
     </script>
 
     <!-- END OF SCRIPT -->
-
 </body>
 </html>
