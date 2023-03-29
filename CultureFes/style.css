@@ -322,3 +322,12 @@ footer p {
         font-size: 1.2rem;
     }
 }
+
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 4rem;
+        top: 13rem;
+        left: 13rem;
+    }
+}
