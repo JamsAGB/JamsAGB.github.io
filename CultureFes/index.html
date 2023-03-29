@@ -148,21 +148,37 @@
         <section id="Contact" class="Contact">
             <div class="wrapper">
                 <h2 style="text-shadow: 0px 2px 7px #fbab9d; color: #2e3644;">Contact Us</h2> 
-                <form>
-                    <div class="input-container">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name">
+                <div class="contact-container">
+                    <div class="contact-seperator">
+                        <div class="socials">
+                            <div>
+                                <a href="https://www.facebook.com/Kyoto.Univ.E/" target="_blank">
+                                    <img src="facebook.png" alt="facebook">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://mobile.twitter.com/KyotoU_News?fbclid=IwAR2ISmasmbfRG5ci3bHNcyyd8nIvDfUbMH6sK5Oq7W8GXiJjnYgGTaFP4EQ" target="_blank">
+                                    <img src="twitter.png" alt="twitter">
+                                </a>
+                            </div>
+                        </div>
+                        <form>
+                            <div class="input-container">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div class="input-container">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div class="input-container">
+                                <label for="msg">Message</label>
+                               <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                            </div>
+                            <button onclick="Submit()" type="submit">SUBMIT</button>
+                        </form>
                     </div>
-                    <div class="input-container">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                    <div class="input-container">
-                        <label for="msg">Message</label>
-                       <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
-                    </div>
-                    <button onclick="Submit()" type="submit">SUBMIT</button>
-                </form>
+                </div>
             </div>
         </section>
     </main>

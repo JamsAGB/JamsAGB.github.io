@@ -16,6 +16,8 @@
     margin-inline: auto;
 }
 
+/* HEADER STYLES */
+
 header {
     width: 100%;
     height: 10vh;
@@ -73,7 +75,7 @@ nav ul li a:hover {
 
 .video-container video {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
     filter: brightness(90%);
 }
@@ -89,7 +91,7 @@ nav ul li a:hover {
     text-shadow: 0px 0px 20px #fbab9d;
 }
 
-
+/* MAIN STYLES */
 
 main {
     font-size: 1.5rem;
@@ -127,7 +129,6 @@ strong {
 section {
     scroll-margin: 110px;
 }
-
 
 
 .events h2 {
@@ -215,8 +216,6 @@ table td {
     margin-bottom: 2rem;
 }
 
-
-
 form {
     width: 400px;
     padding: 1rem;
@@ -264,8 +263,31 @@ button:hover {
 }
 
 
+.contact-container {
+    width: 100%;
+    display: flex;
+}
 
+.contact-seperator {
+    display: flex;
+    flex: 1;
+}
 
+.socials {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 2rem;
+    padding-left: 300px;
+}
+
+.socials img {
+    width: 100px;
+}
+
+/* FOOTER STYLES */
 
 footer {
     width: 100%;
@@ -288,6 +310,7 @@ footer p {
         left: 18rem;
     }
 }
+
 
 @media screen and (max-width: 1366px) {
     .title {
