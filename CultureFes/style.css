@@ -204,7 +204,6 @@ table td {
 .map {
     margin-bottom: 2rem;
     width: 100%;
-    /* style="margin-left: 24rem; border-radius: 10px;" */
 }
 
 
@@ -280,9 +279,15 @@ footer p {
     text-align: center;
 }
 
+/* RESPONSIVE STYLES */
 
-
-
+@media screen and (max-width: 1440px) {
+    .title {
+        font-size: 6rem;
+        top: 21rem;
+        left: 18rem;
+    }
+}
 
 @media screen and (max-width: 1366px) {
     .title {
