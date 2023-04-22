@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+:root {
+    --main-color: #FFB398;
+    --secondarty-color: #FFD9C3;
+    --accent-color: #F08256;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(90deg, #f1e1c2, #fcbc98);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.main-container {
+    width: 1200px;
+    height: 90vh;
+    background-color: #fff;
+    margin-inline: auto;
+    border-radius: 10px;
+    box-shadow: 0px 40px 200px black;
+}
+
+/* MAIN STYLING */
+
+.bill-container {
+    width: 100%;
+    height: 10%;
+    margin-inline: auto;
+    border-radius: 10px 10px 0px 0px;
+    padding: 5px;
+    border-bottom: 1px solid #9e9e9e;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+/* 1st column */
+
+.bill-amount button {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 5px;
+    border: 3px solid #7FF000;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    
+}
+
+.bill-amount input {
+    border: none;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    
+
+    border: 1px solid black;
+}
+
+/* 2nd Column */
+
+
+
+/* 3rd Column */
+
+.checkout a {
+    color: white;
+    text-decoration: none;
+    background-color: #7FF000;
+    padding: 5px 50px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    box-shadow: 0px 10px 10px #d3d3d3;
+    
+}
+
+
+/* CONTENT */
+
+aside {
+    width: 10%;
+    height: 78%;
+    border-right: 2px solid #d3d3d3;
+    position: fixed;
+}
+
+aside nav ul {
+    list-style: none;
+}
+
+nav ul li a {
+    display: flex;
+    gap: 1rem;
+    color: black;
+    text-decoration: none;
+    padding-block: 1rem;
+
+    margin-bottom: 1.5rem;
+}
+
+
+.sub-container {
+    width: 90%;
+    height: 90%;
+    padding: 1rem;
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+.set-container {
+    width: 90%;
+    height: 100%;
+    /* background-color: cyan; */
+    
+    margin-left: 20%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+.card {
+    border-radius: 4px;
+    border: 1px solid #d3d3d3;
+    color: black;
+    text-decoration: none;
+
+    text-align: center;
+}
+
+.card-image {
+    width: 100%;
+    height: 80%;
+
+}
+
+.name {
+    font-size: 1.2rem;
+}
+
+.beverages-container, .bread-container, .canned-container {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.hide-container {
+    display: none;
+}
+
+.item-container {
+    border: 3px solid #7FF000;
+}
+
+
+
+
+/* IMAGES */
+
+.Beverage-img-1 {
+    background-image: url(greatTaste.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.Beverage-img-2 {
+    background-image: url(camomile.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.Bread-img-1 {
+    background-image: url(gardenia.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.Bread-img-2 {
+    background-image: url(pandesal.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.Canned-img-1 {
+    background-image: url(broccoli.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.Canned-img-2 {
+    background-image: url(sardines.jpg);
+    background-position: center;
+    background-size: cover;
+}
