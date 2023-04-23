@@ -11,6 +11,7 @@
 <body>
 
     <div class="main-container">
+        <!-- UPPER PART OF SYSTEM -->
         <div class="bill-container">
            <div class="bill-amount">
                 <div>
@@ -18,31 +19,34 @@
                     <input type="text" name="amount" id="amount" placeholder="0.00">
                 </div>
            </div>
-           <div class="error-display">
-                <p></p>
+           <div class="bill-display">
+                <p>Total</p>
+                <input type="text" name="total" class="total" id="total" placeholder="0">
            </div>
            <div class="checkout">
                 <a href="#" id="purchase-button">Purchase</a>
            </div>
         </div>
+        <!-- END OF UPPER PART -->
         <div class="sub-container">
+            <!-- NAVIGATION ON LEFT SIDE -->
             <aside>
                 <nav>
                     <ul>
                         <li>
-                            <a href="#" class="nav-item" id="beverages-link">
+                            <a href="#" class="nav-item disabled-link" id="beverages-link">
                                 <img src="coffee.svg" class="icon">
                                 <p>Beverages</p>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="nav-item" id="bread-link">
+                            <a href="#" class="nav-item disabled-link" id="bread-link">
                                 <img src="square.svg" class="icon">
                                 <p>Bread/Bakery</p>
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="nav-item" id="canned-link">
+                            <a href="#" class="nav-item disabled-link" id="canned-link">
                                 <img src="database.svg" class="icon">
                                 <p>Canned/Jarred Goods</p>
                             </a>
@@ -50,44 +54,177 @@
                     </ul>
                 </nav>
             </aside>
+            <!-- END OF NAVIGATION -->
+            <!-- MAIN CONTENT -->
             <div class="set-container">
-                <div class="beverages-container grid" id="beverages-container">
-                    <a href="#" class="card">
+                <div class="beverages-container grid disabled-container" id="beverages-container">
+                    <a href="#" class="card" data-value="25.00">
                         <div class="card-image Beverage-img-1"></div>
                         <p class="name">Great taste</p>
                         <p class="price">$25.00</p>
                     </a>
-                    <a href="#" class="card">
+                    <a href="#" class="card" data-value="55.86">
                         <div class="card-image Beverage-img-2"></div>
                         <p class="name">Camomile</p>
                         <p class="price">$55.86</p>
                     </a>
+                    <a href="#" class="card" data-value="45.00">
+                        <div class="card-image Beverage-img-3"></div>
+                        <p class="name">Lemongrass</p>
+                        <p class="price">$45</p>
+                    </a>
+                    <a href="#" class="card" data-value="0.00">
+                        <div class="card-image Beverage-img-4"></div>
+                        <p class="name"></p>
+                        <p class="price"></p>
+                    </a>
+                    <a href="#" class="card" data-value="20.00">
+                        <div class="card-image Beverage-img-5"></div>
+                        <p class="name">Tang</p>
+                        <p class="price">$20</p>
+                    </a>
+                    <a href="#" class="card" data-value="22.00">
+                        <div class="card-image Beverage-img-6"></div>
+                        <p class="name">Eight O'clock</p>
+                        <p class="price">$22</p>
+                    </a>
+                    <a href="#" class="card" data-value="0.00">
+                        <div class="card-image Beverage-img-7"></div>
+                        <p class="name"></p>
+                        <p class="price"></p>
+                    </a>
+                    <a href="#" class="card" data-value="0.00">
+                        <div class="card-image Beverage-img-8"></div>
+                        <p class="name"></p>
+                        <p class="price"></p>
+                    </a>
+                    <a href="#" class="card" data-value="45.00">
+                        <div class="card-image Beverage-img-9"></div>
+                        <p class="name">Coke</p>
+                        <p class="price">$45</p>
+                    </a>
+                    <a href="#" class="card" data-value="40.00">
+                        <div class="card-image Beverage-img-10"></div>
+                        <p class="name">Sprite</p>
+                        <p class="price">$40</p>
+                    </a>
+                    <a href="#" class="card" data-value="46.75">
+                        <div class="card-image Beverage-img-11"></div>
+                        <p class="name">Royal</p>
+                        <p class="price">$46.75</p>
+                    </a>
+                    <a href="#" class="card" data-value="0.00">
+                        <div class="card-image Beverage-img-12"></div>
+                        <p class="name"></p>
+                        <p class="price"></p>
+                    </a>
                 </div>
-                <div class="bread-container grid hide-container" id="bread-container">
-                    <a href="#" class="card">
+                <div class="bread-container grid hide-container disabled-container" id="bread-container">
+                    <a href="#" class="card" data-value="98.05">
                         <div class="card-image Bread-img-1"></div>
                         <p class="name">Gardenia</p>
                         <p class="price">$98.05</p>
                     </a>
-                    <a href="#" class="card">
+                    <a href="#" class="card" data-value="76.00">
                         <div class="card-image Bread-img-2"></div>
+                        <p class="name">Pinoy Bread</p>
+                        <p class="price">$76</p>
+                    </a>
+                    <a href="#" class="card" data-value="0.00">
+                        <div class="card-image Bread-img-3"></div>
+                        <p class="name"></p>
+                        <p class="price"></p>
+                    </a>
+                    <a href="#" class="card" data-value="0.00">
+                        <div class="card-image Bread-img-4"></div>
+                        <p class="name"></p>
+                        <p class="price"></p>
+                    </a>
+                    <a href="#" class="card" data-value="76.07">
+                        <div class="card-image Bread-img-5"></div>
                         <p class="name">Pandesal</p>
                         <p class="price">$76.07</p>
                     </a>
+                    <a href="#" class="card" data-value="0.00">
+                        <div class="card-image Bread-img-6"></div>
+                        <p class="name"></p>
+                        <p class="price"></p>
+                    </a>
+                    <a href="#" class="card" data-value="0.00">
+                        <div class="card-image Bread-img-7"></div>
+                        <p class="name"></p>
+                        <p class="price"></p>
+                    </a>
+                    <a href="#" class="card" data-value="0.00">
+                        <div class="card-image Bread-img-8"></div>
+                        <p class="name"></p>
+                        <p class="price"></p>
+                    </a>
                 </div>
-                <div class="canned-container grid hide-container" id="canned-container">
-                    <a href="#" class="card">
+                <div class="canned-container grid hide-container disabled-container" id="canned-container">
+                    <a href="#" class="card" data-value="34.08">
                         <div class="card-image Canned-img-1"></div>
                         <p class="name">Broccoli</p>
                         <p class="price">$34.08</p>
                     </a>
-                    <a href="#" class="card">
+                    <a href="#" class="card"  data-value="23.08">
                         <div class="card-image Canned-img-2"></div>
-                        <p class="name">Young's Town Sardines</p>
+                        <p class="name">Capsicum</p>
+                        <p class="price">$23.08</p>
+                    </a>
+                    <a href="#" class="card"  data-value="0.00">
+                        <div class="card-image Canned-img-3"></div>
+                        <p class="name"></p>
+                        <p class="price"></p>
+                    </a>
+                    <a href="#" class="card"  data-value="0.00">
+                        <div class="card-image Canned-img-4"></div>
+                        <p class="name"></p>
+                        <p class="price"></p>
+                    </a>
+                    <a href="#" class="card"  data-value="35.00">
+                        <div class="card-image Canned-img-5"></div>
+                        <p class="name">Tomatoes</p>
+                        <p class="price">$35</p>
+                    </a>
+                    <a href="#" class="card"  data-value="20.00">
+                        <div class="card-image Canned-img-6"></div>
+                        <p class="name">Pechay</p>
+                        <p class="price">$20</p>
+                    </a>
+                    <a href="#" class="card"  data-value="0.00">
+                        <div class="card-image Canned-img-7"></div>
+                        <p class="name"></p>
+                        <p class="price"></p>
+                    </a>
+                    <a href="#" class="card"  data-value="0.00">
+                        <div class="card-image Canned-img-8"></div>
+                        <p class="name"></p>
+                        <p class="price"></p>
+                    </a>
+                    <a href="#" class="card"  data-value="20.00">
+                        <div class="card-image Canned-img-9"></div>
+                        <p class="name">Family Sardines</p>
+                        <p class="price">$20</p>
+                    </a>
+                    <a href="#" class="card"  data-value="25.00">
+                        <div class="card-image Canned-img-10"></div>
+                        <p class="name">Young's Town</p>
                         <p class="price">$25</p>
+                    </a>
+                    <a href="#" class="card"  data-value="0.00">
+                        <div class="card-image Canned-img-11"></div>
+                        <p class="name"></p>
+                        <p class="price"></p>
+                    </a>
+                    <a href="#" class="card"  data-value="0.00">
+                        <div class="card-image Canned-img-12"></div>
+                        <p class="name"></p>
+                        <p class="price"></p>
                     </a>
                 </div>
             </div>
+            <!-- END OF MAIN CONTENT -->
         </div>
     </div>  
     
