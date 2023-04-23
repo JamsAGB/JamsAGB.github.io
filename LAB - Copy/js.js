@@ -66,7 +66,7 @@ purchaseButton.addEventListener('click', function() {
         alert("Thank you for purchasing!")
         location.reload()
     } else if (billAmountValue > totalValue) {
-        alert("Thank you for purchasing! \n Your Change: " + change)
+        alert("Thank you for purchasing! \n Your Change: " + change.toFixed(2))
         location.reload()
     } else if (billAmountValue < totalValue) {
         alert("Insufficient Funds!")
