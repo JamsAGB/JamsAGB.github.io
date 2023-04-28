@@ -21,7 +21,7 @@ const breadlink = document.getElementById('bread-link');
 const cannedlink = document.getElementById('canned-link');
 
 
-// BILL INPUT CODE
+// BILL INPUT 
 
 billButton.addEventListener('click', function() {
     if (billAmount.value <= 60 & billAmount.value > 0) {
@@ -42,7 +42,7 @@ billButton.addEventListener('click', function() {
 })
 
 
-// TOTAL VALUE CODE
+// TOTAL VALUE / TOTAL PRICE OF ITEMS 
 
 for(i = 0; i < cards.length; i++) {
     cards[i].addEventListener('click', function() {
@@ -57,7 +57,7 @@ for(i = 0; i < cards.length; i++) {
 }
 
 
-// TOTAL CHECK CODE
+// PRICE TO BILL CHECKING
 
 purchaseButton.addEventListener('click', function() {
     let billAmountValue = parseFloat(billAmount.value);
@@ -76,6 +76,9 @@ purchaseButton.addEventListener('click', function() {
     }
 })
 
+
+
+// ENABLE & DISABLE ITEM PANELS
 
 
 beveragelink.addEventListener('click', function() {

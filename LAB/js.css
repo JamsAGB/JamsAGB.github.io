@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 
-:root {
-    --main-color: #FFB398;
-    --secondarty-color: #FFD9C3;
-    --accent-color: #F08256;
-}
+/* GLOBAL STYLING */
 
 * {
     margin: 0;
@@ -12,6 +8,10 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
+
+/* END OF GLOBAL STYLES */
+
+/* BODY STYLE TO PLACE CONTAINER IN THE CENTER */
 
 body {
     width: 100%;
@@ -22,7 +22,8 @@ body {
     overflow: hidden;
 }
 
-/* MAIN STYLING */
+
+/* MAIN CONTAINER STYLE */
 
 .main-container {
     width: 1200px;
@@ -33,6 +34,9 @@ body {
     box-shadow: 0px 40px 200px black;
 }
 
+/* END OF MAIN CONTAINER STYLE */
+
+/* UPPER PART STYLES */
 
 .bill-container {
     width: 100%;
@@ -46,8 +50,6 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
 }
-
-/* 1st column */
 
 .bill-amount button {
     display: block;
@@ -78,8 +80,6 @@ body {
     border: 1px solid black;
 }
 
-/* 2nd Column */
-
 .bill-display {
     text-align: center;
     font-size: 1.5rem;
@@ -95,8 +95,6 @@ body {
 
     border: 1px solid black;
 }
-
-/* 3rd Column */
 
 .checkout a {
     color: white;
@@ -114,8 +112,10 @@ body {
     background-color: #4f8b09;
 }
 
+/* END OF UPPER PART STYLES */
 
-/* CONTENT */
+
+/* NAVIGATION STYLES */
 
 aside {
     width: 10%;
@@ -137,6 +137,10 @@ nav ul li a {
 
     margin-bottom: 1.5rem;
 }
+
+/* END OF NAVIGATION STYLES */
+
+/* CONTENT STYLES */
 
 .name {
     margin-top: 5px;
@@ -161,14 +165,13 @@ nav ul li a {
     margin-left: 20%;
 }
 
+/* DISPLAY GRID FOR TABLE LIKE LAYOUT */
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1rem;
-
-   
-    overflow-x: scroll;
 }
 
 .card {
@@ -202,6 +205,9 @@ nav ul li a {
 }
 
 
+/* END OF CONTENT STYLES */
+
+
 /* JAVASCRIPT CLASSES */
 
 .hide-container {
@@ -225,6 +231,7 @@ nav ul li a {
     pointer-events: none;
 }
 
+/* END OF JAVASCRIPT CLASSES */
 
 /* IMAGES */
 
